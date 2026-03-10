@@ -69,35 +69,23 @@ TEXTS: Dict[str, Dict[str, str]] = {
         "invalid_weight": "❌ Kg noto'g'ri kiritildi. Faqat son kiriting.",
         "same_region": "⚠️ Jo'natish va qabul qilish viloyati bir xil bo'lmasligi kerak.",
         "order_saved": "✅ Buyurtmangiz qabul qilindi.",
-        "receipt": "🧾 <b>AVTO CHEK</b>
+"receipt": """🧾 <b>AVTO CHEK</b>
 
-"
-                   "━━━━━━━━━━━━━━
-"
-                   "🆔 <b>Buyurtma ID:</b> <code>{order_id}</code>
-"
-                   "👤 <b>Ism:</b> {name}
-"
-                   "👤 <b>Familiya:</b> {surname}
-"
-                   "📞 <b>Telefon:</b> {phone}
-"
-                   "📍 <b>Qayerdan:</b> {from_region}
-"
-                   "🚚 <b>Qayerga:</b> {to_region}
-"
-                   "⚖️ <b>Og'irligi:</b> {weight} kg
-"
-                   "💵 <b>1 kg narx:</b> {price_per_kg:,} so'm
-"
-                   "💰 <b>Jami:</b> {total:,} so'm
-"
-                   "📦 <b>Holati:</b> {status}
-"
-                   "━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━
+🆔 <b>Buyurtma ID:</b> <code>{order_id}</code>
+👤 <b>Ism:</b> {name}
+👤 <b>Familiya:</b> {surname}
+📞 <b>Telefon:</b> {phone}
+📍 <b>Qayerdan:</b> {from_region}
+🚚 <b>Qayerga:</b> {to_region}
+⚖️ <b>Og'irligi:</b> {weight} kg
+💵 <b>1 kg narx:</b> {price_per_kg:,} so'm
+💰 <b>Jami:</b> {total:,} so'm
+📦 <b>Holati:</b> {status}
+━━━━━━━━━━━━━━
 
-"
-                   "💳 To'lov uchun <b>To'lov</b> bo'limidan foydalaning.",
+💳 To'lov uchun <b>To'lov</b> bo'limidan foydalaning.
+""",
         "address_text": "📍 <b>Xizmat ko'rsatish hududlari</b>\n\n• Toshkent shahar\n• Toshkent viloyati\n• Namangan viloyati\n• Andijon viloyati\n• Farg'ona viloyati",
         "payment_text": "💳 <b>To'lov usullari</b>
 
@@ -785,3 +773,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

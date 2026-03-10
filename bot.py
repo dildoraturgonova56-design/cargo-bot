@@ -304,7 +304,7 @@ def fmt_weight(value: float) -> str:
     return str(int(value)) if float(value).is_integer() else str(value)
 
 
-bot = Bot(BOT_TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(BOT_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 
 
@@ -556,3 +556,4 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
